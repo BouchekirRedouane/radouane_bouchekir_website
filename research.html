@@ -165,7 +165,7 @@
                             
                                 <div class="row">
                                     <div class="col-md-8">
-                                        <p align="justify"> <font color="red"> This page is about the research activities during my PhD</font> </p>
+                                        <p align="justify"> <font color="red"> This page is about the research activities during my PhD (<a href="https://dspace.usthb.dz/bitstream/handle/123456789/8836/TH9674.pdf?sequence=1&isAllowed=y" target="_blank">Formal Verification of Complex Probabilistic Systems</a>)</font> </p>
                                         <p align="justify"> My background and experience are on the formal verification of probabilistic systems. The study relies on the following themes:</p>
 											<ul>
 											<li>Probabilistic Model-Checking</li>
@@ -204,10 +204,11 @@
                                             <h3>Research Topics</h3>
                                         </div>
                                         <ul class="ul-boxed list-unstyled">
-                                            <li><a href="#topic1">Symbolic Compositional Model-Checking </a> </li>
-                                            <li><a href="#topic2">Hallucination Detection in LLMs </a> </li>
+                                            <li><a href="#">Symbolic Compositional Model-Checking </a> </li>
+                                            <li><a href="#topic1">Hallucination Detection in LLMs </a> </li>
+                                            <li><a href="#topic2">Assurance Case Development </a> </li>
                                             <li><a href="#topic3">Formal Verification/Runtime Verification of DNNs </a> </li>
-                                            <li><a href="#topic4">Assurance case development </a> </li>
+                                            
                                         </ul>
 <!-- 										 <ul class="ul-boxed list-unstyled">
                                             <li>Control theory and applications </li>
@@ -221,6 +222,105 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+
+                    <div class="pagecontents">
+                        
+                        <div class="section color-1">
+                            <div class="section-container">
+                                
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="title text-center">
+                                            <h3>Research Topics</h3>
+                                        </div>
+                                        <ul class="ul-withdetails">
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-md-3">
+                                                        <div class="image">
+                                                            <img alt="image" src="img/personal/ai.png" class="img-responsive">
+                                                            <div class="imageoverlay">
+                                                                <i class="fa fa-search"></i>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-md-9" id="topic1">
+                                                        <div class="meta">
+                                                            <h3>Hallucination Detection in LLMs via Beam Search Sampling and Semantic Consistency Analysis</h3>
+															<p> general introduction...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="details">
+											    <p align="justify">Large Language Models (LLMs) have revolutionized natural language processing, enabling high-quality content generation. However, they remain prone to hallucinations, instances where generated outputs deviate from factual truth. </p> 
+                                                <center> <img alt="image" src="img/personal/LLM_HD.png" alt="Smiley face"  height="500" width="870"> </center>
+                                                <p>
+                                                    Our approach integrates Beam Search Sampling (<code>BSS</code>) with Semantic Consistency Analysis to identify factual hallucinations. Unlike traditional stochastic generation methods, which can introduce variability without providing clear confidence estimates, our method systematically generates multiple candidate responses using <code>BSS</code>. Specifically, we generate a new beam if the model exhibits uncertainty in its previously generated tokens, allowing for the exploration of diverse, yet high-probability, outputs. This approach mitigates the need to generate a fixed number of responses and adapts to the model’s token-probability level. Once the responses are generated, they are clustered based on semantic similarity, ensuring that differences in phrasing do not obscure factual inconsistencies. To assess the factual consistency, we employ an \( \mathcal{NLI} \) model to compute entailment \( \mathbb{E}(C_i, C_0) \) and contradiction \( \mathbb{C}(C_i, C_0) \) scores between the different clusters and the LLM-generated answer (\( a_0 \)). Finally, the Hallucination Score is computed by combining cluster probability score \( \Phi_{\mathcal{C}_i} \) with entailment/contradiction scores, resulting in a final score that flags potential factual hallucination.
+                                                </p>
+                                                    
+												 									
+												</div>
+                                            </li>
+                                            
+                                        
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="row">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <div class="title text-center">
+                                            <h3>Research Topics</h3>
+                                        </div>
+                                        <ul class="ul-withdetails">
+                                            <li>
+                                                <div class="row">
+                                                    <div class="col-sm-4 col-md-3">
+                                                        <div class="image">
+                                                            <img alt="image" src="img/personal/GSN.png" class="img-responsive">
+                                                            <div class="imageoverlay">
+                                                                <i class="fa fa-search"></i>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8 col-md-9" id="topic2">
+                                                        <div class="meta">
+                                                            <h3>Assurance Case Development</h3>
+															<p> general introduction...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="details">
+                                                    
+                                                    <iframe width="1000" height="685" src="https://www.youtube.com/embed/dD7RzepD2Sc" title="ETB2 Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                                    
+                                                    <iframe width="1000" height="685" src="https://www.youtube.com/embed/s1PoGHLPMdU" title="ETB - UCAVP assurance workflow" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                                <p>
+                                                </p>
+                                                    
+												 									
+												</div>
+                                            </li>
+                                            
+                                        
+                                        </ul>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                            </div>
+                        </div>    
                     </div>
 
                     
